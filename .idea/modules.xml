@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/JAVA_CORE_SIMPLE_SEARCH_ENGINE.iml" filepath="$PROJECT_DIR$/.idea/JAVA_CORE_SIMPLE_SEARCH_ENGINE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Simple Search Engine (Java)/task/JAVA_CORE_SIMPLE_SEARCH_ENGINE.Simple_Search_Engine__Java_-task.iml" filepath="$PROJECT_DIR$/.idea/modules/Simple Search Engine (Java)/task/JAVA_CORE_SIMPLE_SEARCH_ENGINE.Simple_Search_Engine__Java_-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Simple Search Engine (Java)/task/JAVA_CORE_SIMPLE_SEARCH_ENGINE.Simple_Search_Engine__Java_-task.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Simple Search Engine (Java)/task/JAVA_CORE_SIMPLE_SEARCH_ENGINE.Simple_Search_Engine__Java_-task.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Simple Search Engine (Java)/task/JAVA_CORE_SIMPLE_SEARCH_ENGINE.Simple_Search_Engine__Java_-task.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Simple Search Engine (Java)/task/JAVA_CORE_SIMPLE_SEARCH_ENGINE.Simple_Search_Engine__Java_-task.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/JAVA_CORE_SIMPLE_SEARCH_ENGINE.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/JAVA_CORE_SIMPLE_SEARCH_ENGINE.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/JAVA_CORE_SIMPLE_SEARCH_ENGINE.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/JAVA_CORE_SIMPLE_SEARCH_ENGINE.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/JAVA_CORE_SIMPLE_SEARCH_ENGINE.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/JAVA_CORE_SIMPLE_SEARCH_ENGINE.util.test.iml" />
+    </modules>
+  </component>
+</project>
