@@ -1,0 +1,41 @@
+[1;31m
+Start test 1[0m
+Enter number of lines: 
+> 1
+Enter all lines: 
+> John
+Enter number of queries: 
+> 1
+Enter search query: 
+(> this text will definitely be no match
+Found results: 
+No matches found
+[1;31m
+Start test 2[0m
+Enter number of lines: 
+> 3
+Enter all lines: 
+> john smith smith@gmail.com
+&> John lock john_lock@somecompany.com
+#> help me iamaprogrammer@gmail.com
+Enter number of queries: 
+> 4
+Enter search query: 
+> john
+Found results: 
+john smith smith@gmail.com
+$John lock john_lock@somecompany.com
+Enter search query: 
+> Somecompany
+Found results: 
+$John lock john_lock@somecompany.com
+Enter search query: 
+> @
+Found results: 
+john smith smith@gmail.com
+$John lock john_lock@somecompany.com
+!help me iamaprogrammer@gmail.com
+Enter search query: 
+(> this text will definitely be no match
+Found results: 
+No matches found
