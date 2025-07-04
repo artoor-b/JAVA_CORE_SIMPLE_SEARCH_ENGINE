@@ -22,24 +22,24 @@ public class Main {
             stringLines[i] = inputLine;
         }
 
-        System.out.println("Enter number of queries: ");
-        int searchQueryNumber = scanner.nextInt();
-        scanner.nextLine();
+        boolean activeMenu = true;
+        int activeOption = -1;
+        // Open CLI menu:
 
-        for (int i = 0; i < searchQueryNumber; i++) {
-            System.out.println("Enter search query: ");
-            String query = scanner.nextLine();
-
-            ArrayList<String> searchResult = findQuery(query, stringLines);
-
-            System.out.println("Found results: ");
-
-            if (searchResult.isEmpty()) {
-                System.out.println("No matches found");
-            } else {
-                for (String line : searchResult) {
-                    System.out.println(line);
-                }
+        while (activeMenu) {
+            meneuCli();
+            activeOption = scanner.nextInt();
+            scanner.nextLine();
+            switch (activeOption) {
+                case 1:
+                    findQuery(stringLines, scanner);
+                    break;
+                case 2:
+                    printAllData(stringLines);
+                    break;
+                case 0:
+                    activeMenu = false;
+                    break;
             }
         }
 //        String[] dataLineIndexed = firstLine.split(" ");
@@ -59,7 +59,16 @@ public class Main {
 //        }
     }
 
-    private static ArrayList<String> findQuery(String query, String[] data) {
+    private static void meneuCli() {
+        System.out.println("=== Menu ===");
+        System.out.println("1. Type query");
+        System.out.println("2. Print all data");
+        System.out.println("0. Exit");
+    }
+
+    private static void findQuery(String[] data, Scanner scanner) {
+        String query = scanner.nextLine();
+
         ArrayList<String> results = new ArrayList<>(data.length);
 
         for (String line : data) {
@@ -68,6 +77,18 @@ public class Main {
             }
         }
 
-        return results;
+        if (results.isEmpty()) {
+            System.out.println("No matches found");
+        } else {
+            for (String line : results) {
+                System.out.println(line);
+            }
+        }
+    }
+
+    private static void printAllData(String[] data) {
+        for (String line : data) {
+            System.out.println(line);
+        }
     }
 }

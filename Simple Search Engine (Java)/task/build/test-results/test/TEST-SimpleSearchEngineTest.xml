@@ -1,48 +1,209 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SimpleSearchEngineTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-07-03T23:48:38" hostname="MacBook-Air-Artur-2.local" time="0.036">
+<testsuite name="SimpleSearchEngineTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-07-04T13:13:19" hostname="MacBook-Air-Artur-2.local" time="0.11">
   <properties/>
-  <testcase name="start" classname="SimpleSearchEngineTest" time="0.036"/>
+  <testcase name="start" classname="SimpleSearchEngineTest" time="0.11"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 Enter number of lines: 
-> 1
+> 6
 Enter all lines: 
-> John
-Enter number of queries: 
-> 1
-Enter search query: 
-> this text will definitely be no match
-Found results: 
-No matches found
+> Dwight Joseph djo@gmail.com
+> Rene Webb webb@gmail.com
+> Katie Jacobs
+> Erick Harrington harrington@gmail.com
+> Myrtle Medina
+> Erick Burgess
+=== Menu ===
+1. Type query
+2. Print all data
+0. Exit
+> 2
+Dwight Joseph djo@gmail.com
+Rene Webb webb@gmail.com
+Katie Jacobs
+Erick Harrington harrington@gmail.com
+Myrtle Medina
+Erick Burgess
+=== Menu ===
+1. Type query
+2. Print all data
+0. Exit
+> 0
 ?[1;31m
 Start test 2?[0m
 Enter number of lines: 
-> 3
+> 6
 Enter all lines: 
-> john smith smith@gmail.com
-> John lock john_lock@somecompany.com
-> help me iamaprogrammer@gmail.com
-Enter number of queries: 
-> 4
-Enter search query: 
-> john
-Found results: 
-john smith smith@gmail.com
-John lock john_lock@somecompany.com
-Enter search query: 
-> Somecompany
-Found results: 
-John lock john_lock@somecompany.com
-Enter search query: 
+> Dwight Joseph djo@gmail.com
+> Rene Webb webb@gmail.com
+> Katie Jacobs
+> Erick Harrington harrington@gmail.com
+> Myrtle Medina
+> Erick Burgess
+=== Menu ===
+1. Type query
+2. Print all data
+0. Exit
+> 1
+> burgess
+Erick Burgess
+=== Menu ===
+1. Type query
+2. Print all data
+0. Exit
+> 0
+?[1;31m
+Start test 3?[0m
+Enter number of lines: 
+> 6
+Enter all lines: 
+> Dwight Joseph djo@gmail.com
+> Rene Webb webb@gmail.com
+> Katie Jacobs
+> Erick Harrington harrington@gmail.com
+> Myrtle Medina
+> Erick Burgess
+=== Menu ===
+1. Type query
+2. Print all data
+0. Exit
+> 1
+> erick
+Erick Harrington harrington@gmail.com
+Erick Burgess
+=== Menu ===
+1. Type query
+2. Print all data
+0. Exit
+> 0
+?[1;31m
+Start test 4?[0m
+Enter number of lines: 
+> 6
+Enter all lines: 
+> Dwight Joseph djo@gmail.com
+> Rene Webb webb@gmail.com
+> Katie Jacobs
+> Erick Harrington harrington@gmail.com
+> Myrtle Medina
+> Erick Burgess
+=== Menu ===
+1. Type query
+2. Print all data
+0. Exit
+> 3
+=== Menu ===
+1. Type query
+2. Print all data
+0. Exit
+> 1
+> burgess
+Erick Burgess
+=== Menu ===
+1. Type query
+2. Print all data
+0. Exit
+> 2
+Dwight Joseph djo@gmail.com
+Rene Webb webb@gmail.com
+Katie Jacobs
+Erick Harrington harrington@gmail.com
+Myrtle Medina
+Erick Burgess
+=== Menu ===
+1. Type query
+2. Print all data
+0. Exit
+> 2
+Dwight Joseph djo@gmail.com
+Rene Webb webb@gmail.com
+Katie Jacobs
+Erick Harrington harrington@gmail.com
+Myrtle Medina
+Erick Burgess
+=== Menu ===
+1. Type query
+2. Print all data
+0. Exit
+> 1
+> erick
+Erick Harrington harrington@gmail.com
+Erick Burgess
+=== Menu ===
+1. Type query
+2. Print all data
+0. Exit
+> 0
+?[1;31m
+Start test 5?[0m
+Enter number of lines: 
+> 6
+Enter all lines: 
+> Dwight Joseph djo@gmail.com
+> Rene Webb webb@gmail.com
+> Katie Jacobs
+> Erick Harrington harrington@gmail.com
+> Myrtle Medina
+> Erick Burgess
+=== Menu ===
+1. Type query
+2. Print all data
+0. Exit
+> 2
+Dwight Joseph djo@gmail.com
+Rene Webb webb@gmail.com
+Katie Jacobs
+Erick Harrington harrington@gmail.com
+Myrtle Medina
+Erick Burgess
+=== Menu ===
+1. Type query
+2. Print all data
+0. Exit
+> 1
 > @
-Found results: 
-john smith smith@gmail.com
-John lock john_lock@somecompany.com
-help me iamaprogrammer@gmail.com
-Enter search query: 
-> this text will definitely be no match
-Found results: 
+Dwight Joseph djo@gmail.com
+Rene Webb webb@gmail.com
+Erick Harrington harrington@gmail.com
+=== Menu ===
+1. Type query
+2. Print all data
+0. Exit
+> 1
+> this text never find some match
 No matches found
+=== Menu ===
+1. Type query
+2. Print all data
+0. Exit
+> 2
+Dwight Joseph djo@gmail.com
+Rene Webb webb@gmail.com
+Katie Jacobs
+Erick Harrington harrington@gmail.com
+Myrtle Medina
+Erick Burgess
+=== Menu ===
+1. Type query
+2. Print all data
+0. Exit
+> 0
+?[1;31m
+Start test 6?[0m
+Enter number of lines: 
+> 6
+Enter all lines: 
+> Dwight Joseph djo@gmail.com
+> Rene Webb webb@gmail.com
+> Katie Jacobs
+> Erick Harrington harrington@gmail.com
+> Myrtle Medina
+> Erick Burgess
+=== Menu ===
+1. Type query
+2. Print all data
+0. Exit
+> 0
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
