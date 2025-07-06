@@ -1,5 +1,9 @@
 package search;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.Reader;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -7,20 +11,29 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-//        String firstLine = scanner.nextLine();
-//        String searchWord = scanner.nextLine();
+//        System.out.println("Enter number of lines: ");
+//        int n = scanner.nextInt();
+//        scanner.nextLine();
+//
+//        String[] stringLines = new String[n];
+//
+//        System.out.println("Enter all lines: ");
+//        for (int i = 0; i < n; i++) {
+//            String inputLine = scanner.nextLine();
+//            stringLines[i] = inputLine;
+//        }
+        String inputFileName = "";
 
-        System.out.println("Enter number of lines: ");
-        int n = scanner.nextInt();
-        scanner.nextLine();
-
-        String[] stringLines = new String[n];
-
-        System.out.println("Enter all lines: ");
-        for (int i = 0; i < n; i++) {
-            String inputLine = scanner.nextLine();
-            stringLines[i] = inputLine;
+        for (int i = 0; i < args.length; i++) {
+            if ("--data".equals(args[i]) & i + 1 < args.length) {
+                inputFileName = args[i+1];
+                break;
+            }
         }
+
+        File inputFile = new File(inputFileName);
+
+        ArrayList<String> stringLines = readFile(inputFile);
 
         boolean activeMenu = true;
         int activeOption = -1;
@@ -42,21 +55,6 @@ public class Main {
                     break;
             }
         }
-//        String[] dataLineIndexed = firstLine.split(" ");
-//
-//        int searchIndex = -1;
-//        for (int i = 0; i< dataLineIndexed.length; i++) {
-//            if (dataLineIndexed[i].equals(searchWord)) {
-//                searchIndex = i + 1;
-//                break;
-//            }
-//        }
-//
-//        if (searchIndex != -1) {
-//            System.out.println(searchIndex);
-//        } else {
-//            System.out.println("Not found");
-//        }
     }
 
     private static void meneuCli() {
@@ -66,10 +64,10 @@ public class Main {
         System.out.println("0. Exit");
     }
 
-    private static void findQuery(String[] data, Scanner scanner) {
+    private static void findQuery(ArrayList<String> data, Scanner scanner) {
         String query = scanner.nextLine();
 
-        ArrayList<String> results = new ArrayList<>(data.length);
+        ArrayList<String> results = new ArrayList<>(data.size());
 
         for (String line : data) {
             if (line.toLowerCase().contains(query.toLowerCase())) {
@@ -86,9 +84,23 @@ public class Main {
         }
     }
 
-    private static void printAllData(String[] data) {
+    private static void printAllData(ArrayList<String> data) {
         for (String line : data) {
             System.out.println(line);
         }
+    }
+
+    private static ArrayList<String> readFile(File inputFile) {
+        ArrayList<String> dataLines = new ArrayList<String>(5);
+
+        try (Scanner scanner = new Scanner(inputFile)) {
+            while (scanner.hasNext()) {
+                dataLines.add(scanner.nextLine());
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println(e);
+        }
+
+        return dataLines;
     }
 }
