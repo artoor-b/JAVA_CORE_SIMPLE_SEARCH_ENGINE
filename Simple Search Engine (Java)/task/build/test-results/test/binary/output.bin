@@ -15,7 +15,7 @@
 	Jim Gray
 Coreen Beckham
 Bob Yeh bobyeah@gmail.com
-$Shannan Strope stropeshah@gmail.com
+!Shannan Bob stropeshah@gmail.com
 Yer Fillion
 "Margene Resendez marres@gmail.com
 Blossom Ambler
@@ -25,13 +25,13 @@
 Yer Leopold
 Stefania Trunzo
 Alexis Leopold
-Carlene Pompa
+Carlene Bob
 Oliver Dacruz
 Jonie Richter
 &Pasquale Gallien gallien@evilcorp.com
 Verdie Gentle
 %Gerardo Strouth gallien@evilcorp.com
-Agripina Dones
+Agripina Bob
 Latricia Niebuhr
 Malena Schommer
 Drema Leopold
@@ -49,7 +49,7 @@ Elin Gray
 Nydia Mcduffie
 Florencio Defibaugh
 Warner Giblin
-	May Mans
+	Bob Mans
 	Shu Gray
 Kaycee Gray
 &Victorina Froehlich victory@gmail.com
@@ -68,8 +68,7 @@ Elin Gray
 2. Print all data
 0. Exit
 > 1
-
-> burgess
+	> qwerty
 No matches found
 === Menu ===
 1. Type query
@@ -83,8 +82,11 @@ Elin Gray
 2. Print all data
 0. Exit
 > 1
-> erick
-No matches found
+
+> Leopold
+Yer Leopold
+Alexis Leopold
+Drema Leopold
 === Menu ===
 1. Type query
 2. Print all data
@@ -102,9 +104,12 @@ Elin Gray
 2. Print all data
 0. Exit
 > 1
-
-> burgess
-No matches found
+> Bob
+Bob Yeh bobyeah@gmail.com
+!Shannan Bob stropeshah@gmail.com
+Carlene Bob
+Agripina Bob
+	Bob Mans
 === Menu ===
 1. Type query
 2. Print all data
@@ -120,7 +125,7 @@ Elin Gray
 	Jim Gray
 Coreen Beckham
 Bob Yeh bobyeah@gmail.com
-$Shannan Strope stropeshah@gmail.com
+!Shannan Bob stropeshah@gmail.com
 Yer Fillion
 "Margene Resendez marres@gmail.com
 Blossom Ambler
@@ -130,13 +135,13 @@ Elin Gray
 Yer Leopold
 Stefania Trunzo
 Alexis Leopold
-Carlene Pompa
+Carlene Bob
 Oliver Dacruz
 Jonie Richter
 &Pasquale Gallien gallien@evilcorp.com
 Verdie Gentle
 %Gerardo Strouth gallien@evilcorp.com
-Agripina Dones
+Agripina Bob
 Latricia Niebuhr
 Malena Schommer
 Drema Leopold
@@ -154,7 +159,7 @@ Elin Gray
 Nydia Mcduffie
 Florencio Defibaugh
 Warner Giblin
-	May Mans
+	Bob Mans
 	Shu Gray
 Kaycee Gray
 &Victorina Froehlich victory@gmail.com
@@ -176,7 +181,7 @@ Elin Gray
 	Jim Gray
 Coreen Beckham
 Bob Yeh bobyeah@gmail.com
-$Shannan Strope stropeshah@gmail.com
+!Shannan Bob stropeshah@gmail.com
 Yer Fillion
 "Margene Resendez marres@gmail.com
 Blossom Ambler
@@ -186,13 +191,13 @@ Elin Gray
 Yer Leopold
 Stefania Trunzo
 Alexis Leopold
-Carlene Pompa
+Carlene Bob
 Oliver Dacruz
 Jonie Richter
 &Pasquale Gallien gallien@evilcorp.com
 Verdie Gentle
 %Gerardo Strouth gallien@evilcorp.com
-Agripina Dones
+Agripina Bob
 Latricia Niebuhr
 Malena Schommer
 Drema Leopold
@@ -210,7 +215,7 @@ Elin Gray
 Nydia Mcduffie
 Florencio Defibaugh
 Warner Giblin
-	May Mans
+	Bob Mans
 	Shu Gray
 Kaycee Gray
 &Victorina Froehlich victory@gmail.com
@@ -222,8 +227,11 @@ Elin Gray
 2. Print all data
 0. Exit
 > 1
-> erick
-No matches found
+
+> Leopold
+Yer Leopold
+Alexis Leopold
+Drema Leopold
 === Menu ===
 1. Type query
 2. Print all data
@@ -235,141 +243,19 @@ Elin Gray
 1. Type query
 2. Print all data
 0. Exit
-> 2
-Kristofer Galley
-,Fernando Marbury fernando_marbury@gmail.com
-Kristyn Nix nix-kris@gmail.com
-Regenia Enderle
-Malena Gray
-Colette Mattei
-Wendolyn Mcphillips
-	Jim Gray
-Coreen Beckham
-Bob Yeh bobyeah@gmail.com
-$Shannan Strope stropeshah@gmail.com
-Yer Fillion
-"Margene Resendez marres@gmail.com
-Blossom Ambler
- Teri Ledet teri_ledet@gmail.com
-Dana Baron baron@gmail.com
-Abram Goldsberry
-Yer Leopold
-Stefania Trunzo
-Alexis Leopold
-Carlene Pompa
-Oliver Dacruz
-Jonie Richter
-&Pasquale Gallien gallien@evilcorp.com
-Verdie Gentle
-%Gerardo Strouth gallien@evilcorp.com
-Agripina Dones
-Latricia Niebuhr
-Malena Schommer
-Drema Leopold
-Heide Payeur
-Ranae Digiovanni
-Simona Pereira
-Nick Digiovanni
-(Angelita Wigington gallien@evilcorp.com
-
-Elin Gray
-Dwain Trunzo
-Boris Beiler
-Remi Malek fsociefy@gmail.com
-(Demetria Hostetler gallien@evilcorp.com
-Nydia Mcduffie
-Florencio Defibaugh
-Warner Giblin
-	May Mans
-	Shu Gray
-Kaycee Gray
-&Victorina Froehlich victory@gmail.com
-Roseanne Gray
-Erica Radford hisam@gmail.com
-Elyse Pauling
-=== Menu ===
-1. Type query
-2. Print all data
-0. Exit
 > 1
 > @
-,Fernando Marbury fernando_marbury@gmail.com
-Kristyn Nix nix-kris@gmail.com
-Bob Yeh bobyeah@gmail.com
-$Shannan Strope stropeshah@gmail.com
-"Margene Resendez marres@gmail.com
- Teri Ledet teri_ledet@gmail.com
-Dana Baron baron@gmail.com
-&Pasquale Gallien gallien@evilcorp.com
-%Gerardo Strouth gallien@evilcorp.com
-(Angelita Wigington gallien@evilcorp.com
-Remi Malek fsociefy@gmail.com
-(Demetria Hostetler gallien@evilcorp.com
-&Victorina Froehlich victory@gmail.com
-Erica Radford hisam@gmail.com
-=== Menu ===
-1. Type query
-2. Print all data
-0. Exit
-> 1
-"> this text never find some match
 No matches found
 === Menu ===
 1. Type query
 2. Print all data
 0. Exit
-> 2
-Kristofer Galley
-,Fernando Marbury fernando_marbury@gmail.com
-Kristyn Nix nix-kris@gmail.com
-Regenia Enderle
-Malena Gray
-Colette Mattei
-Wendolyn Mcphillips
-	Jim Gray
-Coreen Beckham
-Bob Yeh bobyeah@gmail.com
-$Shannan Strope stropeshah@gmail.com
-Yer Fillion
-"Margene Resendez marres@gmail.com
-Blossom Ambler
- Teri Ledet teri_ledet@gmail.com
-Dana Baron baron@gmail.com
-Abram Goldsberry
-Yer Leopold
-Stefania Trunzo
-Alexis Leopold
-Carlene Pompa
-Oliver Dacruz
-Jonie Richter
-&Pasquale Gallien gallien@evilcorp.com
-Verdie Gentle
-%Gerardo Strouth gallien@evilcorp.com
-Agripina Dones
-Latricia Niebuhr
-Malena Schommer
-Drema Leopold
-Heide Payeur
-Ranae Digiovanni
-Simona Pereira
-Nick Digiovanni
-(Angelita Wigington gallien@evilcorp.com
+> 1
 
-Elin Gray
-Dwain Trunzo
-Boris Beiler
-Remi Malek fsociefy@gmail.com
-(Demetria Hostetler gallien@evilcorp.com
-Nydia Mcduffie
-Florencio Defibaugh
-Warner Giblin
-	May Mans
-	Shu Gray
-Kaycee Gray
-&Victorina Froehlich victory@gmail.com
-Roseanne Gray
-Erica Radford hisam@gmail.com
-Elyse Pauling
+> Leopold
+Yer Leopold
+Alexis Leopold
+Drema Leopold
 === Menu ===
 1. Type query
 2. Print all data
@@ -404,92 +290,17 @@ Elin Gray
 0. Exit
 > 1
 > h
-Wendolyn Mcphillips
-Coreen Beckham
-Bob Yeh bobyeah@gmail.com
-$Shannan Strope stropeshah@gmail.com
-Jonie Richter
-%Gerardo Strouth gallien@evilcorp.com
-Latricia Niebuhr
-Malena Schommer
-Heide Payeur
-(Demetria Hostetler gallien@evilcorp.com
-Florencio Defibaugh
-	Shu Gray
-&Victorina Froehlich victory@gmail.com
-Erica Radford hisam@gmail.com
-=== Menu ===
-1. Type query
-2. Print all data
-0. Exit
-> 2
-Kristofer Galley
-,Fernando Marbury fernando_marbury@gmail.com
-Kristyn Nix nix-kris@gmail.com
-Regenia Enderle
-Malena Gray
-Colette Mattei
-Wendolyn Mcphillips
-	Jim Gray
-Coreen Beckham
-Bob Yeh bobyeah@gmail.com
-$Shannan Strope stropeshah@gmail.com
-Yer Fillion
-"Margene Resendez marres@gmail.com
-Blossom Ambler
- Teri Ledet teri_ledet@gmail.com
-Dana Baron baron@gmail.com
-Abram Goldsberry
-Yer Leopold
-Stefania Trunzo
-Alexis Leopold
-Carlene Pompa
-Oliver Dacruz
-Jonie Richter
-&Pasquale Gallien gallien@evilcorp.com
-Verdie Gentle
-%Gerardo Strouth gallien@evilcorp.com
-Agripina Dones
-Latricia Niebuhr
-Malena Schommer
-Drema Leopold
-Heide Payeur
-Ranae Digiovanni
-Simona Pereira
-Nick Digiovanni
-(Angelita Wigington gallien@evilcorp.com
-
-Elin Gray
-Dwain Trunzo
-Boris Beiler
-Remi Malek fsociefy@gmail.com
-(Demetria Hostetler gallien@evilcorp.com
-Nydia Mcduffie
-Florencio Defibaugh
-Warner Giblin
-	May Mans
-	Shu Gray
-Kaycee Gray
-&Victorina Froehlich victory@gmail.com
-Roseanne Gray
-Erica Radford hisam@gmail.com
-Elyse Pauling
+No matches found
 === Menu ===
 1. Type query
 2. Print all data
 0. Exit
 > 1
-> @gmail.com
-,Fernando Marbury fernando_marbury@gmail.com
-Kristyn Nix nix-kris@gmail.com
-Bob Yeh bobyeah@gmail.com
-$Shannan Strope stropeshah@gmail.com
-"Margene Resendez marres@gmail.com
- Teri Ledet teri_ledet@gmail.com
-Dana Baron baron@gmail.com
-Remi Malek fsociefy@gmail.com
-&Victorina Froehlich victory@gmail.com
-Erica Radford hisam@gmail.com
+> gallien@evilcorp.com
+&Pasquale Gallien gallien@evilcorp.com
+%Gerardo Strouth gallien@evilcorp.com
+(Angelita Wigington gallien@evilcorp.com
+(Demetria Hostetler gallien@evilcorp.com
 === Menu ===
 1. Type query
 2. Print all data
@@ -517,7 +328,7 @@ Elin Gray
 	Jim Gray
 Coreen Beckham
 Bob Yeh bobyeah@gmail.com
-$Shannan Strope stropeshah@gmail.com
+!Shannan Bob stropeshah@gmail.com
 Yer Fillion
 "Margene Resendez marres@gmail.com
 Blossom Ambler
@@ -527,13 +338,13 @@ Elin Gray
 Yer Leopold
 Stefania Trunzo
 Alexis Leopold
-Carlene Pompa
+Carlene Bob
 Oliver Dacruz
 Jonie Richter
 &Pasquale Gallien gallien@evilcorp.com
 Verdie Gentle
 %Gerardo Strouth gallien@evilcorp.com
-Agripina Dones
+Agripina Bob
 Latricia Niebuhr
 Malena Schommer
 Drema Leopold
@@ -551,7 +362,7 @@ Elin Gray
 Nydia Mcduffie
 Florencio Defibaugh
 Warner Giblin
-	May Mans
+	Bob Mans
 	Shu Gray
 Kaycee Gray
 &Victorina Froehlich victory@gmail.com
@@ -573,7 +384,7 @@ Elin Gray
 	Jim Gray
 Coreen Beckham
 Bob Yeh bobyeah@gmail.com
-$Shannan Strope stropeshah@gmail.com
+!Shannan Bob stropeshah@gmail.com
 Yer Fillion
 "Margene Resendez marres@gmail.com
 Blossom Ambler
@@ -583,13 +394,13 @@ Elin Gray
 Yer Leopold
 Stefania Trunzo
 Alexis Leopold
-Carlene Pompa
+Carlene Bob
 Oliver Dacruz
 Jonie Richter
 &Pasquale Gallien gallien@evilcorp.com
 Verdie Gentle
 %Gerardo Strouth gallien@evilcorp.com
-Agripina Dones
+Agripina Bob
 Latricia Niebuhr
 Malena Schommer
 Drema Leopold
@@ -607,7 +418,7 @@ Elin Gray
 Nydia Mcduffie
 Florencio Defibaugh
 Warner Giblin
-	May Mans
+	Bob Mans
 	Shu Gray
 Kaycee Gray
 &Victorina Froehlich victory@gmail.com
@@ -627,36 +438,17 @@ Elin Gray
 0. Exit
 > 1
 > h
-Wendolyn Mcphillips
-Coreen Beckham
-Bob Yeh bobyeah@gmail.com
-$Shannan Strope stropeshah@gmail.com
-Jonie Richter
-%Gerardo Strouth gallien@evilcorp.com
-Latricia Niebuhr
-Malena Schommer
-Heide Payeur
-(Demetria Hostetler gallien@evilcorp.com
-Florencio Defibaugh
-	Shu Gray
-&Victorina Froehlich victory@gmail.com
-Erica Radford hisam@gmail.com
+No matches found
 === Menu ===
 1. Type query
 2. Print all data
 0. Exit
 > 1
-	> @GMAIL
-,Fernando Marbury fernando_marbury@gmail.com
-Kristyn Nix nix-kris@gmail.com
-Bob Yeh bobyeah@gmail.com
-$Shannan Strope stropeshah@gmail.com
-"Margene Resendez marres@gmail.com
- Teri Ledet teri_ledet@gmail.com
-Dana Baron baron@gmail.com
-Remi Malek fsociefy@gmail.com
-&Victorina Froehlich victory@gmail.com
-Erica Radford hisam@gmail.com
+> gallien@evilcorp.com
+&Pasquale Gallien gallien@evilcorp.com
+%Gerardo Strouth gallien@evilcorp.com
+(Angelita Wigington gallien@evilcorp.com
+(Demetria Hostetler gallien@evilcorp.com
 === Menu ===
 1. Type query
 2. Print all data

@@ -12,9 +12,9 @@ files:
   - name: src/search/testFile.txt
     visible: true
     learner_created: true
-feedback_link: https://hyperskill.org/projects/66/stages/357/implement#comment
+feedback_link: https://hyperskill.org/learn/step/5499#comment
 status: Solved
 feedback:
   message: Congratulations!
   time: "Sun, 06 Jul 2025 22:16:51 UTC"
-record: -1
+record: 4

@@ -9,6 +9,9 @@ files:
   - name: test/SimpleSearchEngineTest.java
     visible: false
     learner_created: false
-feedback_link: https://hyperskill.org/projects/66/stages/359/implement#comment
+  - name: src/search/testFile.txt
+    visible: true
+    learner_created: true
+feedback_link: https://hyperskill.org/learn/step/5501#comment
 status: Unchecked
 record: -1

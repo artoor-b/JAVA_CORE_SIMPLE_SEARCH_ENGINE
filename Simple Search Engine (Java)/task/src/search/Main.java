@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.Reader;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
@@ -34,6 +36,7 @@ public class Main {
         File inputFile = new File(inputFileName);
 
         ArrayList<String> stringLines = readFile(inputFile);
+        Map<String, ArrayList<Integer>> invertedIndex = createInvertedIndex(stringLines);
 
         boolean activeMenu = true;
         int activeOption = -1;
@@ -45,7 +48,7 @@ public class Main {
             scanner.nextLine();
             switch (activeOption) {
                 case 1:
-                    findQuery(stringLines, scanner);
+                    findQuery(stringLines, invertedIndex, scanner);
                     break;
                 case 2:
                     printAllData(stringLines);
@@ -64,22 +67,15 @@ public class Main {
         System.out.println("0. Exit");
     }
 
-    private static void findQuery(ArrayList<String> data, Scanner scanner) {
+    private static void findQuery(ArrayList<String> data, Map<String, ArrayList<Integer>> invertedIndex, Scanner scanner) {
         String query = scanner.nextLine();
+        ArrayList<Integer> indexes = invertedIndex.getOrDefault(query.toLowerCase(), new ArrayList<Integer>(0));
 
-        ArrayList<String> results = new ArrayList<>(data.size());
-
-        for (String line : data) {
-            if (line.toLowerCase().contains(query.toLowerCase())) {
-                results.add(line);
-            }
-        }
-
-        if (results.isEmpty()) {
+        if (indexes.isEmpty()) {
             System.out.println("No matches found");
         } else {
-            for (String line : results) {
-                System.out.println(line);
+            for (Integer wordIndex : indexes) {
+                System.out.println(data.get(wordIndex));
             }
         }
     }
@@ -102,5 +98,25 @@ public class Main {
         }
 
         return dataLines;
+    }
+
+    static Map<String, ArrayList<Integer>> createInvertedIndex(ArrayList<String> dataLines) {
+        Map<String, ArrayList<Integer>> dataLinesMap = new HashMap<>();
+
+        for (int i = 0; i < dataLines.size(); i++) {
+
+            for (String word : dataLines.get(i).split(" ")) {
+                String wordLowerCase = word.toLowerCase();
+                if (dataLinesMap.get(wordLowerCase) == null) {
+                    ArrayList<Integer> indexList = new ArrayList<>();
+                    indexList.add(i);
+                    dataLinesMap.put(wordLowerCase, indexList);
+                } else {
+                    dataLinesMap.get(wordLowerCase).add(i);
+                }
+            }
+        }
+
+        return dataLinesMap;
     }
 }
