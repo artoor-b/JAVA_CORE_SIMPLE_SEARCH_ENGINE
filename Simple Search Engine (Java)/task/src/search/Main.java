@@ -4,10 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.Reader;
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -36,6 +33,7 @@ public class Main {
         File inputFile = new File(inputFileName);
 
         ArrayList<String> stringLines = readFile(inputFile);
+        ArrayList<Integer> stringLinesIndexes = getAllLinesIndexes(stringLines);
         Map<String, ArrayList<Integer>> invertedIndex = createInvertedIndex(stringLines);
 
         boolean activeMenu = true;
@@ -48,7 +46,7 @@ public class Main {
             scanner.nextLine();
             switch (activeOption) {
                 case 1:
-                    findQuery(stringLines, invertedIndex, scanner);
+                    findQuery(stringLines, invertedIndex, scanner, stringLinesIndexes);
                     break;
                 case 2:
                     printAllData(stringLines);
@@ -67,9 +65,70 @@ public class Main {
         System.out.println("0. Exit");
     }
 
-    private static void findQuery(ArrayList<String> data, Map<String, ArrayList<Integer>> invertedIndex, Scanner scanner) {
+    static ArrayList<Integer> getStrategy(Scanner scanner, Map<String, ArrayList<Integer>> invertedIndex, ArrayList<Integer> allLinesIndexes) {
+        System.out.println("Select a matching strategy: ALL, ANY, NONE");
+        String strategyName = scanner.nextLine();
         String query = scanner.nextLine();
-        ArrayList<Integer> indexes = invertedIndex.getOrDefault(query.toLowerCase(), new ArrayList<Integer>(0));
+
+        switch (strategyName) {
+            case "ALL":
+                return allStrategy(invertedIndex, query);
+            case "NONE":
+                return noneStrategy(invertedIndex, query, allLinesIndexes);
+            case "ANY":
+                return anyStrategy(invertedIndex, query);
+            default:
+                return new ArrayList<>(0);
+        }
+    }
+
+    static ArrayList<Integer> anyStrategy(Map<String, ArrayList<Integer>> invertedIndex, String query) {
+        List<String> queryWords = List.of(query.split(" "));
+        Set<Integer> allResult = new HashSet<>();
+
+        for (String word : queryWords) {
+            List<Integer> indexes = invertedIndex.get(word);
+
+            if (indexes != null) {
+                allResult.addAll(indexes);
+            }
+        }
+
+        return new ArrayList<>(allResult);
+    }
+
+    static ArrayList<Integer> allStrategy(Map<String, ArrayList<Integer>> invertedIndex, String query) {
+        List<String> queryWords = List.of(query.split(" "));
+        Set<Integer> allResult = new HashSet<>();
+
+        for (String word : queryWords) {
+            List<Integer> indexes = invertedIndex.get(word);
+
+            if (indexes != null) {
+                if (allResult.isEmpty()) {
+                    allResult.addAll(indexes);
+                } else {
+                    allResult.retainAll(indexes);
+                }
+            } else {
+                return new ArrayList<>(0);
+            }
+        }
+
+        return new ArrayList<>(allResult);
+    }
+
+    static ArrayList<Integer> noneStrategy(Map<String, ArrayList<Integer>> invertedIndex, String query, ArrayList<Integer> allLinesIndexes) {
+        ArrayList<Integer> anyResult = anyStrategy(invertedIndex, query);
+
+        ArrayList<Integer> allIndexesCopy = new ArrayList<>(allLinesIndexes);
+        allIndexesCopy.removeAll(anyResult);
+
+        return allIndexesCopy;
+    }
+
+    private static void findQuery(ArrayList<String> data, Map<String, ArrayList<Integer>> invertedIndex, Scanner scanner, ArrayList<Integer> stringLinesIndexes) {
+        ArrayList<Integer> indexes = getStrategy(scanner, invertedIndex, stringLinesIndexes);
 
         if (indexes.isEmpty()) {
             System.out.println("No matches found");
@@ -87,7 +146,7 @@ public class Main {
     }
 
     private static ArrayList<String> readFile(File inputFile) {
-        ArrayList<String> dataLines = new ArrayList<String>(5);
+        ArrayList<String> dataLines = new ArrayList<>(5);
 
         try (Scanner scanner = new Scanner(inputFile)) {
             while (scanner.hasNext()) {
@@ -118,5 +177,15 @@ public class Main {
         }
 
         return dataLinesMap;
+    }
+
+    static ArrayList<Integer> getAllLinesIndexes(ArrayList<String> stringLines) {
+        ArrayList<Integer> allLinesIndexes = new ArrayList<>(stringLines.size());
+
+        for (int i = 0; i < stringLines.size(); i++) {
+            allLinesIndexes.add(i);
+        }
+
+        return allLinesIndexes;
     }
 }
